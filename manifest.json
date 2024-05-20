@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "GitHub PR Hide Commits",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Clean up the conversation tab on GitHub PRs by hiding commit messages",
   "icons": {
     "16": "images/icon-16.png",
@@ -12,7 +12,7 @@
   "content_scripts": [
     {
       "js": ["scripts/content.js"],
-      "matches": ["https://github.com/*/*/pull/*"]
+      "matches": ["*://github.com/*"]
     }
   ]
 }
